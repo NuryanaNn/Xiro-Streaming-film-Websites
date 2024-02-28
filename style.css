@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #04111B;
+    color: #fff;
+}
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    background-color: #04111B;
+    padding: 1.5rem 5%;
+    justify-content: space-between;
+}
+
+header ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header button{
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 600px;
+    padding: 0 5%;
+    background-image: url(banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.hero .heroText{
+    width: 550px;
+}
+
+.hero .heroText h5{
+    font-size: 25px;
+    color: red;
+}
+
+.hero .heroText span{
+    color: red;
+}
+
+.hero .heroText h1{
+    font-size: 50px;
+}
+
+.hero button{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.hero button i{
+    margin-right: 5px;
+}
+
+/* Upcoming movie */
+.upcomingMovie{
+    padding: 2rem 5%;
+    margin-top: 70px;
+}
+
+.upcomingMovie ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.upcomingMovie ul li button{
+    padding: 10px 20px;
+    background-color: #20212B;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.upcomingMovie .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upcomingMovie  .title span{
+    font-size: 20px;
+    border: 1px solid red;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.upcomingMovie .title h1{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.upcomingContent{
+    margin-top: 40px;
+}
+
+.upcomingContent .card{
+    width: 300px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.upcomingContent .card img{
+    width: 100%;
+}
+
+.upcomingContent .card .cardText .titleMovie{
+    display: flex;
+    justify-content: space-between;
+}
+
+.upcomingContent .card .cardText .titleMovie h4{
+    color: red;
+}
+
+.upcomingContent .card .cardText .detailsMovie{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.upcomingContent .card .cardText i{
+    margin-right: 10px;
+}
+
+.upcomingMovie .streaming{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upcomingMovie .streaming button{
+    padding: 10px 20px;
+    border: 1px solid red;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #fff;
+}
+
+/* Top Trend */
+.topTrend{
+    padding: 2rem 5%;
+    margin-top: 50px;
+}
+
+.topTrend .title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.topTrend .title h3{
+    font-size: 40px;
+}
+
+.topTrendContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.topTrendContent .card{
+    width: 350px;
+}
+
+.topTrendContent .images{
+    position: relative;
+    height: 220px;
+}
+
+.topTrendContent .card img{
+    width: 100%;
+    height: 100%;
+}
+
+.topTrendContent .card .desc{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #20212B;
+    padding: 10px 5px;
+}
+
+.topTrendContent .card i{
+    margin-right: 10px;
+}
+
+.topTrendContent .movieTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.topTrendContent ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+/* TV */
+.tvShow{
+    margin-top: 70px;
+    background-image: url(tvshow-banner.jpg);
+    height: 1100px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.tvShowContent{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 5%;
+    row-gap: 30px;
+    z-index: 99;
+    position: relative;
+}
+
+.tvShowContent .card{
+    width: 270px;
+    height: 400px;
+}
+
+.tvShowContent .card img{
+    width: 100%;
+    height: 100%;
+}
+
+.tvShowContent .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tvShowContent .details ul li{
+    display: inline;
+    list-style: none;
+    margin-left: 10px;
+}
+
+/* show online */
+.showOnline{
+    margin-top: 70px;
+    padding: 2rem 5%;
+}
+
+.showOnline .title{
+    text-align: center;
+}
+
+.showOnline .title h3{
+    font-size: 30px;
+}
+
+.showOnline .showOnlineContent{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.showOnline .showOnlineContent .card{
+    width: 350px;
+    height: 600px;
+}
+
+.showOnlineContent .card img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Best Movie */
+.bestMovie{
+    background-image: url(service-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    margin-top: 50px;
+}
+
+.bestMovie .title h3{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 40px;
+    z-index: 99;
+    position: relative;
+}
+
+.bestMovie .bestMovieContent{
+    padding: 5rem 5%;
+    z-index: 99;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+}
+
+.bestMovieContent .card{
+    width: 350px;
+    background-color: #20212B;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bestMovieContent .card:hover{
+    background-color: red;
+    transition: .5s;
+}
+
+.bestMovieContent .card h3{
+    margin-top: 15px;
+}
+
+.bestMovieContent .card p{
+    margin: 10px 0;
+}
+
+.bestMovieContent .card button{
+    padding: 10px 20px;
+    border: 1px solid red;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 30px;
+}
+
+.bestMovieContent .card:hover button{
+    background-color: #fff;
+    transition: .5s;
+    color: black;
+}
+
+/* Galllery */
+.gallery{
+    margin-top: 70px;
+    background-image: url(gallery-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+}
+
+.gallery .title{
+    text-align: center;
+    z-index: 99;
+    position: relative;
+    padding-top: 50px;
+}
+
+.gallery .title h3{
+    font-size: 35px;
+}
+
+.galleryContent{
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    z-index: 99;
+    position: relative;
+}
+
+.gallery .galleryContent .card{
+    width: 400px;
+}
+
+.galleryContent .card img{
+    width: 100%;
+}
+
+.galleryContent .card2{
+    transform: translateY(-50px);
+}
+
+/* comming soon */
+.commingSoon{
+    padding: 2rem 5%;
+    background-image: url(upcoming-banner.jpg);
+    margin-top: 70px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.commingSoon .card{
+    background-color: rgba(32, 33, 43, .5);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.commingSoon .card span{
+    border: 1px solid red;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: red;
+    font-size: 20px;
+}
+
+.commingSoon .card h1{
+    font-size: 50px;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 2rem 5%;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+} 
+
+footer ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer h3{
+    color: red;
+}
